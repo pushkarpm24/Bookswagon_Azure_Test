@@ -12,5 +12,12 @@ namespace BooksWagonAutomationAzure.TestClass
             Login login = new Login(driver);
             login.LoginPage();
         }
+
+        [Test, Order(1)]
+        public void SearchBookTest()
+        {
+            SearchBook book = new SearchBook(driver);
+            book.SearchBookPage();
+        }
     }
 }

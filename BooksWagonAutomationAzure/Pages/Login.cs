@@ -17,9 +17,6 @@ namespace BooksWagonAutomationAzure.Pages
             PageFactory.InitElements(driver, this);
         }
 
-      //  [FindsBy(How = How.XPath, Using = "//input[@class='_2zrpKA _1dBPDZ']")]
-      //  IWebElement PageHeader;
-
         [FindsBy(How = How.XPath, Using = "//input[@id='ctl00_phBody_SignIn_txtEmail']")]
         IWebElement email;
 
@@ -31,13 +28,13 @@ namespace BooksWagonAutomationAzure.Pages
 
         public void LoginPage()
         {
-           // PageHeader.Click();
             Thread.Sleep(3000);
             email.SendKeys(Email);
             Thread.Sleep(3000);
             password.SendKeys(Password);
             Thread.Sleep(3000);
             LoginBtnFinal.Click();
+            Thread.Sleep(3000);
         }
     }
 }
