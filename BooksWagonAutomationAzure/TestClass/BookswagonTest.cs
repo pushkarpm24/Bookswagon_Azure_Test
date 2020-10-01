@@ -13,11 +13,11 @@ namespace BooksWagonAutomationAzure.TestClass
             login.LoginPage();
         }
 
-        [Test, Order(1)]
-        public void SearchBookTest()
-        {
-            SearchBook book = new SearchBook(driver);
-            book.SearchBookPage();
-        }
+       // [Test, Order(1)]
+       // public void SearchBookTest()
+      //  {
+      //      SearchBook book = new SearchBook(driver);
+      //      book.SearchBookPage();
+      //  }
     }
 }
