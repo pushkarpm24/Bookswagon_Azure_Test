@@ -26,7 +26,7 @@ namespace BooksWagonAutomationAzure.Pages
         [FindsBy(How = How.Id, Using = "ctl00_phBody_SignIn_txtPassword")]
         IWebElement password { get; set; }
 
-        [FindsBy(How = How.Id, Using = "ctl00_phBody_SignIn_btnLogin")]
+        [FindsBy(How = How.CssSelector, Using = "#ctl00_phBody_SignIn_btnLogin")]
         IWebElement LoginBtnFinal { get; set; }
 
         public void LoginPage()
