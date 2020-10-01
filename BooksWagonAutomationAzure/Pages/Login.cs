@@ -31,7 +31,7 @@ namespace BooksWagonAutomationAzure.Pages
 
         public void LoginPage()
         {
-            Thread.Sleep(10000);
+            Thread.Sleep(40000);
             LoginBtn.Click();
             Thread.Sleep(3000);
             email.SendKeys(Email);
