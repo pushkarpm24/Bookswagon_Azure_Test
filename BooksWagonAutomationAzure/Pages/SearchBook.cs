@@ -20,7 +20,7 @@ namespace BooksWagonAutomationAzure.Pages
             PageFactory.InitElements(driver, this);
         }
 
-        [FindsBy(How = How.XPath, Using = "//img[@id='ctl00_imglogo']")]
+        [FindsBy(How = How.CssSelector, Using = "#ctl00_imglogo")]
         IWebElement Logo;
 
         [FindsBy(How = How.XPath, Using = "//input[@id='ctl00_TopSearch1_txtSearch']")]
