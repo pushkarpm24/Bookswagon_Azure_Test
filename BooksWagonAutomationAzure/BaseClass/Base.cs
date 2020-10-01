@@ -19,7 +19,7 @@ namespace BooksWagonAutomationAzure.BaseClass
             ChromeOptions options = new ChromeOptions();
             options.AddArguments("start-maximized", "--disable-notifications");
             driver = new ChromeDriver(options);
-            driver.Url = "https://www.bookswagon.com/login";
+            driver.Url = "https://www.flipkart.com/";
         }
 
         [OneTimeTearDown]
