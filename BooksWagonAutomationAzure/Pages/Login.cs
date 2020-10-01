@@ -17,17 +17,17 @@ namespace BooksWagonAutomationAzure.Pages
             PageFactory.InitElements(driver, this);
         }
 
-       // [FindsBy(How = How.XPath, Using = "//a[contains(text(),'Login')]")]
-       // public IWebElement LoginBtn;
+        // [FindsBy(How = How.XPath, Using = "//a[contains(text(),'Login')]")]
+        // public IWebElement LoginBtn;
 
-        [FindsBy(How = How.Id, Using = "ctl00_phBody_SignIn_txtEmail")]
-        IWebElement email { get; set; }
+        [FindsBy(How = How.XPath, Using = "//input[@id='ctl00_phBody_SignIn_txtEmail']")]
+        IWebElement email;
 
-        [FindsBy(How = How.Id, Using = "ctl00_phBody_SignIn_txtPassword")]
-        IWebElement password { get; set; }
+        [FindsBy(How = How.XPath, Using = "//input[@id='ctl00_phBody_SignIn_txtPassword']")]
+        IWebElement password;
 
         [FindsBy(How = How.XPath, Using = "//input[@id='ctl00_phBody_SignIn_btnLogin']")]
-        IWebElement LoginBtnFinal { get; set; }
+        IWebElement LoginBtnFinal;
 
         public void LoginPage()
         {
