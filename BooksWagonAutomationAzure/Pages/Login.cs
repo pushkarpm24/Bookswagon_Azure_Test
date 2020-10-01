@@ -20,13 +20,13 @@ namespace BooksWagonAutomationAzure.Pages
       //  [FindsBy(How = How.XPath, Using = "//input[@class='_2zrpKA _1dBPDZ']")]
       //  IWebElement PageHeader;
 
-        [FindsBy(How = How.XPath, Using = "//input[@class='_2zrpKA _1dBPDZ']")]
+        [FindsBy(How = How.XPath, Using = "//input[@id='ctl00_phBody_SignIn_txtEmail']")]
         IWebElement email;
 
-        [FindsBy(How = How.XPath, Using = "//input[@class='_2zrpKA _3v41xv _1dBPDZ']")]
+        [FindsBy(How = How.XPath, Using = "//input[@id='ctl00_phBody_SignIn_txtPassword']")]
         IWebElement password;
 
-        [FindsBy(How = How.XPath, Using = "//button[@class='_2AkmmA _1LctnI _7UHT_c']//span[contains(text(),'Login')]")]
+        [FindsBy(How = How.XPath, Using = "//input[@id='ctl00_phBody_SignIn_btnLogin']")]
         IWebElement LoginBtnFinal;
 
         public void LoginPage()
