@@ -17,7 +17,7 @@ namespace BooksWagonAutomationAzure.Pages
             PageFactory.InitElements(driver, this);
         }
 
-        [FindsBy(How = How.XPath, Using = "//a[contains(text(),'Login')]")]
+        [FindsBy(How = How.CssSelector, Using = "#ctl00_divLogin")]
         public IWebElement LoginBtn;
 
         [FindsBy(How = How.Id, Using = "ctl00_phBody_SignIn_txtEmail")]
@@ -31,7 +31,7 @@ namespace BooksWagonAutomationAzure.Pages
 
         public void LoginPage()
         {
-            Thread.Sleep(40000);
+            Thread.Sleep(6000);
             LoginBtn.Click();
             Thread.Sleep(3000);
             email.SendKeys(Email);
