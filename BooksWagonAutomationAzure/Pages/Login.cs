@@ -26,12 +26,12 @@ namespace BooksWagonAutomationAzure.Pages
         [FindsBy(How = How.Id, Using = "ctl00_phBody_SignIn_txtPassword")]
         IWebElement password { get; set; }
 
-        [FindsBy(How = How.CssSelector, Using = "#ctl00_phBody_SignIn_btnLogin")]
+        [FindsBy(How = How.XPath, Using = "//input[@id='ctl00_phBody_SignIn_btnLogin']")]
         IWebElement LoginBtnFinal { get; set; }
 
         public void LoginPage()
         {
-            Thread.Sleep(2000);
+            Thread.Sleep(10000);
             LoginBtn.Click();
             Thread.Sleep(3000);
             email.SendKeys(Email);
